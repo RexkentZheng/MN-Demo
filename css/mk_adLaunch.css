@@ -25,6 +25,11 @@ body .nav-single-select.plat-select .sub-nav-list{
 	position: relative;
 }
 
+.tab-4-subtitle {
+	font-size: 20px;
+	margin: 15px 0 -15px 5px;
+}
+
 /* .data-box-normal .data-table tbody tr:nth-child(1) td{
     background: #999;
 } */

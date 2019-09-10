@@ -1127,40 +1127,9 @@
                   <img src="./img/tab-2-1-c.png" style="width: 100%" />
                 </div>
                 <div class="p-20  bd m-b-10" v-show="currentPlatformTab === 'ott'">
-                  <img src="./img/tab-3-3-1.png" style="width: 100%" />
-                  <img class="m-t-10" src="./img/tab-3-3-2.png" style="width: 100%" />
+                  <img src="./img/tab-2-3-1.png" style="width: 100%" />
+                  <img class="m-t-10" src="./img/tab-2-3-2.png" style="width: 100%" />
                 </div>
-                <!-- <div class="p-20 bd m-b-10">
-                  <img src="./img/tab-2-1.jpg" style="width: 100%" />
-                </div>
-                <div class="has-menu p-20 bd m-b-10" v-show="currentPlatformTab !== 'ott'">
-                  <chart-menu></chart-menu>
-                  <img src="./img/tab-2-2.jpg" style="width: 100%"/>
-                </div>
-                <div class="p-20 bd m-b-10" v-show="currentPlatformTab !== 'ott'">
-                  <img src="./img/tab-2-3.jpg" style="width: 100%" />
-                </div>
-                <div class="has-menu p-20 bd m-b-10" v-show="currentPlatformTab !== 'ott'">
-                  <chart-menu></chart-menu>
-                  <img src="./img/tab-2-4.jpg" style="width: 100%"/>
-                </div>
-                <div class="flex-box" v-show="currentPlatformTab !== 'ott'">
-                  <div class="p-20 bd m-b-10 m-r-10">
-                    <img src="./img/tab-2-5.jpg" style="width: 100%" />
-                  </div>
-                  <div class="has-menu p-20 bd m-b-10">
-                    <chart-menu></chart-menu>
-                    <img src="./img/tab-2-6.jpg" style="width: 100%" />
-                  </div>
-                </div>
-                <div class="flex-box" v-show="currentPlatformTab === 'ott'">
-                    <div class="p-20 bd m-b-10 m-r-10">
-                      <img src="./img/tab-2-7.jpg" style="width: 100%" />
-                    </div>
-                    <div class="p-20 bd m-b-10">
-                      <img src="./img/tab-2-8.jpg" style="width: 100%" />
-                    </div>
-                  </div> -->
               </div>
               <div class="main-charts-item"  v-show="currentTab === 'register'">
                 <div class="main-charts-tab sub-charts-tab">
@@ -1183,6 +1152,7 @@
                 </div>
               </div>
               <div class="main-charts-item"  v-show="currentTab === 'login'">
+                <p class="tab-4-subtitle">消费者全链路分布</p>
                 <div class="sencond-tab m-t-40">
                   <img src="./img/tab-4-1-t.png" @click="currentSonTab = '4-1'"  :class="{current: currentSonTab === '4-1'}" style="width: 22%;" />
                   <img src="./img/tab-4-2-t.png" @click="currentSonTab = '4-2'"  :class="{current: currentSonTab === '4-2'}" style="width: 22%;" />
@@ -1227,47 +1197,14 @@
                   <img src="./img/tab-4-1-c.png" style="width: 100%" />
                 </div>
                 <div class="sencond-content m-t-10" v-show="currentSonTab === '4-2'">
-                  <img src="./img/tab-4-2-c.png" style="width: 100%" />
+                  <img src="./img/tab-4-1-c.png" style="width: 100%" />
                 </div>
                 <div class="sencond-content m-t-10">
-                  <img src="./img/tab-4-3-c.png" v-show="currentSonTab === '4-3'" style="width: 100%" />
+                  <img src="./img/tab-4-1-c.png" v-show="currentSonTab === '4-3'" style="width: 100%" />
                 </div>
                 <div class="sencond-content m-t-10">
-                  <img src="./img/tab-4-4-c.png" v-show="currentSonTab === '4-4'" style="width: 100%" />
+                  <img src="./img/tab-4-1-c.png" v-show="currentSonTab === '4-4'" style="width: 100%" />
                 </div>
-                  <!-- <div class="flex-box" style="width: 100%">
-                    <div style="flex: 1">
-                      <img src="./img/tab-4-1.png" style="width: 100%" />
-                    </div>
-                    <div class="has-menu" style="flex: 1">
-                      <chart-menu></chart-menu>
-                      <img src="./img/tab-4-2.png" style="width: 100%" />
-                    </div>
-                  </div>
-                  <div class="flex-box">
-                    <div>
-                      <img src="./img/tab-4-3.jpg" style="width: 100%" />
-                    </div>
-                    <div>
-                      <img src="./img/tab-4-4.jpg" style="width: 100%" />
-                    </div>
-                  </div>
-                  <div class="flex-box">
-                    <div>
-                      <img src="./img/tab-4-5.jpg" style="width: 100%" />
-                    </div>
-                    <div>
-                      <img src="./img/tab-4-6.jpg" style="width: 100%" />
-                    </div>
-                  </div>
-                  <div class="flex-box">
-                    <div>
-                      <img src="./img/tab-4-7.png" style="width: 100%" />
-                    </div>
-                    <div>
-                      <img src="./img/tab-4-8.png" style="width: 100%" />
-                    </div>
-                  </div> -->
               </div>
             </div>
           </div>
@@ -1276,9 +1213,6 @@
     </section>
   </div>
   <div class="clear"></div>
- <!--  <footer class="footer" id="comFooter">
-    <p class="copy-right">CopyRight 2017-2027, All Rights Reserved 内蒙古蒙牛乳业 版权所有 V2.0</p>
-  </footer> -->
   </div>
   <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="./js/layDate.js"></script>
