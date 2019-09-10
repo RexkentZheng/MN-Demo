@@ -1,0 +1,359 @@
+/** sidebar **/
+.menu-icon{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+li{
+    cursor:pointer;
+}
+#hidden-menu{
+    height: 100%;
+    background-color: #f1f2f3;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+#hidden-menu .icon-pack-div div{
+    padding: 13px 0;
+    text-align: center;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.sidebar {
+    height: 100%;
+    top: 50px;
+    left: 0;
+    bottom:0px;
+    background: #f1f2f3;
+    position: fixed;
+    width:200px;
+    z-index: 10;
+}
+.checked{
+    left: 12px;
+    color: #00AC27 !important;;
+    padding-right: 15px;
+    background-color: #fff
+}
+.menu {
+    text-align:center;
+    /*font-family: PingFangHK-Medium;*/
+    font-size: 14px;
+    color: #656C6F;
+    letter-spacing: 0.3px;
+}
+.menu a{
+    text-align: left;
+    padding-left: 0px !important;
+}
+.menu dd{
+    left: 12px;
+    padding-left:50px !important;
+}
+.menu dd:hover{
+    color: #00AC27;
+    /*padding-right: 30px;*/
+    background-color: #fff
+}
+.menu a:hover{
+    /*left: 12px;*/
+    /*padding-right: 30px;*/
+    /*background-color: #fff*/
+}
+.sidebar .sidebar-cell{
+    position: relative;
+    border-bottom:1px solid #e7e8ee;
+}
+.sidebar .sidebar-cell>dt{
+    border-bottom:1px solid #ffffff;
+}
+
+.sidebar .sidebar-cell>dt .link{
+    display: block;
+    color:#484848;
+    height:44px;
+    padding-top:60px;
+    border-left: 5px solid #ec6b64;
+    border-right:3px solid #e7e8ee;
+    background: #f2f3f6;
+    text-align: center;
+}
+
+
+
+.sidebar .sidebar-cell dd{
+    position: absolute;
+    background: #ffffff;
+    left:110px;
+    top:0px;
+}
+
+.sidebar .siderbar-sub-nav{
+    border-top: 1px solid #f3f3f3;
+    font-size:12px;
+    /*
+    overflow-x:hidden;
+    overflow-y:auto;
+    */
+    display: none;
+}
+
+.sidebar .siderbar-sub-nav li{
+    border-bottom: 1px solid #f3f3f3;
+    padding-right: 15px;
+    border-right:3px solid #ffffff;
+    position: relative;
+}
+.sidebar .siderbar-sub-nav li:hover{
+    border-right-color:#14a83c;
+    background-color: #f4f5f8;
+}
+.sidebar .siderbar-sub-nav li a{
+    display: none;
+    width:100px;
+    height:23px;
+    line-height: 23px;
+    padding:15px 0 15px 70px;
+    color:#595757;
+    background-repeat: no-repeat;
+}
+.sidebar .siderbar-sub-nav li a:link{
+    display: block;
+    width:100px;
+    height:23px;
+    line-height: 23px;
+    padding:15px 0 15px 70px;
+    color:#595757;
+    background-repeat: no-repeat;
+}
+
+/*.icon_nav_ying_xiao .siderbar-sub-nav li a { padding:22px 0 22px 70px;}
+
+
+*/.sidebar .siderbar-sub-nav li a:visited{
+
+  }
+
+.sidebar .siderbar-sub-nav li a:hover{
+    color:#14a83c;
+}
+
+.sidebar .siderbar-sub-nav li a:active{
+
+}
+
+/**  鐩茶祩绂勭尗鑱墮姘撹仹閳モ挌銉拷閮濅箙尾鐘拷锟� **/
+.sidebar-cell.icon_nav_ying_xiao>dt .link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_ying_xiao.png) 40px 30px no-repeat #f2f3f6;
+}
+.icon_nav_ying_xiao.current>dt>.link,
+.icon_nav_ying_xiao:hover>dt .link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_ying_xiao_current.png) 40px 30px no-repeat #14a83c;
+}
+
+.sidebar-cell.icon_nav_user>dt>.link{
+    border-left: 5px solid #52a4de;
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_user.png) 40px 30px no-repeat #f2f3f6;
+}
+
+.icon_nav_user.current>dt>.link,
+.icon_nav_user:hover>dt>.link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_user_current.png) 40px 30px no-repeat #14a83c;
+}
+
+.sidebar-cell.icon_nav_all_net .siderbar-sub-nav li a:link{
+    width:130px;
+    height:23px;
+    line-height: 23px;
+    padding:15px 0 15px 70px;
+}
+
+.sidebar-cell.icon_nav_all_net>dt>.link{
+    border-left: 5px solid #14a83c;
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_all_net.png) 40px 30px no-repeat #f2f3f6;
+}
+
+.icon_nav_all_net.current>dt>.link,
+.icon_nav_all_net:hover>dt>.link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_all_net_current.png) 40px 30px no-repeat #14a83c;
+}
+
+.sidebar-cell.icon_nav_ec_plat>dt>.link{
+    border-left: 5px solid #14a83c;
+    background: url(/mengniudbi/static/my/images/img/common/side/ec_all_net.png) 40px 30px no-repeat #f2f3f6;
+}
+
+.icon_nav_ec_plat.current>dt>.link,
+.icon_nav_ec_plat:hover>dt>.link{
+    background: url(/mengniudbi/static/my/images/img/common/side/ec_all_net_current.png) 40px 30px no-repeat #14a83c;
+}
+
+.sidebar-cell.icon_nav_power>dt>.link{
+    border-left: 5px solid #ffad37;
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_power.png) 40px 30px no-repeat #f2f3f6;
+}
+.icon_nav_power.current>dt>.link,
+.icon_nav_power:hover>dt>.link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_power_current.png) 40px 30px no-repeat #14a83c;
+}
+
+/** 鑼呭綍鑱藉繖鑱介垾鈭额灎顬犲够銉呯妳顭嬨儖鍠℃噴銇㈠槑骞活煀寰熸拋銉傚秮锟解挌銇㈡锟� **/
+.sidebar .sidebar-cell.current>dt .link,
+.sidebar .sidebar-cell:hover>dt .link{
+    color:#ffffff;
+    border-left-color: #14a83c;
+    border-right-color: #14a83c;
+}
+
+.sidebar .sidebar-cell:hover>dd{
+    display: block;
+}
+
+
+
+/** 鑾藉崲鍗㈢洸璧傞垾鎳娿儌顒绘兎顭婂緹鎾併儌宥侊拷锟� **/
+
+
+
+.sub_nav_link_xianxia{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/common/side/allnet/xianxia.png);
+}
+.sub_nav_link_xianxia:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/xianxia_current.png);
+}
+
+.sub_nav_link_xingqu{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/xingqu.png);
+
+}
+.sub_nav_link_xingqu:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/xingqu_current.png);
+}
+.sub_nav_link_wanggou{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/wanggou.png);
+
+}
+.sub_nav_link_wanggou:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/wanggou_current.png);
+}
+.sub_nav_link_dianshang{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/dianshang.png);
+
+}
+.sub_nav_link_dianshang:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/dianshang_current.png);
+}
+.sub_nav_link_shipin{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/shipin.png);
+
+}
+.sub_nav_link_shipin:hover{
+
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/shipin_current.png);
+}
+.sub_nav_link_pianhao{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/pianhao.png);
+}
+.sub_nav_link_pianhao:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/pianhao_current.png);
+}
+.sub_nav_link_sousuo{
+    background-position: 25px 15px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/sousuo.png);
+}
+.sub_nav_link_sousuo:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/allnet/sousuo_current.png);
+}
+
+.sub_nav_link_user{
+    background-position: 25px 28px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/manage/user_manage.png);
+}
+.sub_nav_link_user:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/manage/user_manage_current.png);
+}
+
+
+.sub_nav_link_indicator{
+    background-position: 25px 25px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/manage/indicator_manage.png);
+}
+.sub_nav_link_indicator:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/manage/indicator_manage_current.png);
+}
+.sub_nav_first_ad{
+    background-position: 25px 23px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_ad.png);
+}
+.sub_nav_first_ad:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_ad_current.png);
+}
+
+.sub_nav_first_site{
+    background-position: 25px 23px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_site.png);
+}
+.sub_nav_first_site:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_site_current.png);
+}
+
+.sub_nav_first_path{
+    background-position: 25px 23px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_path.png);
+}
+.sub_nav_first_path:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_path_current.png);
+}
+
+.sub_nav_first_flow{
+    background-position: 25px 23px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_flow.png);
+}
+.sub_nav_first_flow:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_first_flow_current.png);
+}
+
+
+.sub_nav_user_path{
+    background-position: 25px 23px;
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_user_path.png);
+}
+.sub_nav_user_path:hover{
+    background-image: url(/mengniudbi/static/my/images/img/common/side/marketing/sub_nav_user_path_current.png);
+}
+
+.sidebar-cell.icon_nav_zk>dt>.link{
+
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_power.png) 40px 30px no-repeat #f2f3f6;
+}
+.icon_nav_zk.current>dt>.link,
+.icon_nav_zk:hover>dt>.link{
+    background: url(/mengniudbi/static/my/images/img/common/side/nav_power_current.png) 40px 30px no-repeat #14a83c;
+}
+.siderbar-sub-third-nav{
+    position: absolute;
+    left: 188px;
+    top: 0px;
+    background: white;
+    display: none;
+    border-top: 1px solid #f3f3f3;
+}
+.siderbar-sub-all-net-third-nav{
+    position: absolute;
+    left: 218px;
+    top: 0px;
+    background: white;
+    display: none;
+    border-top: 1px solid #f3f3f3;
+}
